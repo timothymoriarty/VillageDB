@@ -1,0 +1,37 @@
+<%= form_for :school, url: schools_path do |f| %>
+	<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :street_address %><br>
+		<%= f.text_field :street_address %>
+	</p>
+	<p>
+		<%= f.label :city %><br>
+		<%= f.text_field :city %>
+	</p>
+	<p>
+		<%= f.label :state %><br>
+		<%= f.text_field :state %>
+	</p>
+	<p>
+		<%= f.label :zip_code %><br>
+		<%= f.text_field :zip_code %>
+	</p>
+	<p>
+		<%= f.label :phone_number %><br>
+		<%= f.url_field :phone_number %>
+	</p>
+	<p>
+		<%= f.label :fax_number %><br>
+		<%= f.url_field :fax_number %>
+	</p>
+	<p>
+		<%= f.label :website %><br>
+		<%= f.url_field :website %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

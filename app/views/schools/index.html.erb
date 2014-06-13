@@ -1,0 +1,11 @@
+<h1>Schools</h1>
+ 
+<p>
+	<ul>
+	  <% @schools.each do |school| %>
+	    <li>
+				<%= school.name %><%= link_to "Edit", edit_school_path(school) %>
+			</li>
+	  <% end %>
+	</ul>
+</p>
